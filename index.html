@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как сделать сворачивание и разворачивание блоков или текста по нажатию на элемент на странице сайта?</title>
+  <link rel="stylesheet" href=".scss-live-compile/toggle.css">
+  <script type="module" src="toggle.js" defer></script>
+</head>
+<body>
+  
+  <style>
+    .box {
+      border: 1px solid black;
+      line-height: 175%;
+    }
+    .btn {
+      margin-top: 25px;
+    }
+  </style>
+
+
+
+  <div class="box wrapper-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur quos, fuga nemo consequatur aliquam deserunt cum quae commodi cumque minus nulla at cupiditate ipsam, beatae ipsum laboriosam ea, qui distinctio expedita numquam alias. Placeat omnis numquam quam eum, distinctio porro facilis inventore iusto iure at veniam veritatis cumque temporibus ad molestias, dolore nostrum hic officiis optio cupiditate dolores mollitia. Fuga quo velit illo, quibusdam quos necessitatibus nesciunt, blanditiis enim unde reiciendis cumque nulla nihil consectetur ipsa dolore veniam molestias reprehenderit fugiat accusantium tempora repudiandae! Soluta dignissimos facere pariatur incidunt, cum sit doloremque dolores amet! Molestiae tempore excepturi beatae quos sunt, harum esse aspernatur odio reprehenderit similique! Omnis saepe sequi iusto doloribus facilis! Esse animi, possimus consequuntur delectus atque nostrum amet non? Beatae fuga error, quaerat debitis vitae quas hic obcaecati voluptatibus. Perferendis sapiente dolor tempore ex dicta consectetur ea ad atque quod ab! Molestias labore optio cum aperiam itaque.</div>
+
+  <button class="btn toggle" data-toggle-wrapper=".wrapper-1" data-toggle-opened-text="Скрыть" data-toggle-closed-text="Показать">
+    <div class="toggle__text"></div>
+  </button>
+
+
+
+  <br>
+  <br>
+  <br>
+
+
+
+  <div class="box wrapper-2 toggle__half" style="--toggle-rows-count: 3;">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus corrupti iusto sint, enim esse harum, dolores ab quisquam necessitatibus facilis consectetur eligendi quod velit dicta beatae neque deserunt molestias, vel ea delectus? Earum, repellendus amet doloremque ipsa odit ipsum veniam sit nemo repudiandae fuga ab maxime eveniet ad enim in numquam delectus excepturi incidunt dolore. Autem inventore natus beatae optio dolores et ea libero nisi possimus, ab velit nam. Accusamus obcaecati aliquid, exercitationem nostrum pariatur alias! Aut asperiores dignissimos vel rem quibusdam sit mollitia eaque libero accusamus! Expedita excepturi sed, qui laborum aliquid rem! Fugit eveniet non atque aliquam aspernatur? Saepe nesciunt laborum ducimus unde perferendis ipsa. Suscipit impedit consequatur facilis voluptatum ea harum eaque vero blanditiis ullam nesciunt saepe nobis esse iure ex fuga voluptatibus odit natus iusto, tempore aspernatur repudiandae ratione optio. Ea reprehenderit beatae nobis at eius, ipsum voluptas, laboriosam modi eum, veniam blanditiis! Voluptates, laudantium consequuntur.
+  </div>
+
+  <button class="btn toggle" data-toggle-wrapper=".wrapper-2" data-toggle-type="text" data-toggle-opened-text="Свернуть" data-toggle-closed-text="Показать еще">
+    <div class="toggle__text"></div>
+  </button>
+
+
+
+</body>
+</html>

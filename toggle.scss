@@ -1,0 +1,28 @@
+.toggle {
+    align-items: center;
+    display: inline-flex;
+
+    font-weight: 500;
+    font-size: 1rem;
+
+    &._opened & {
+        &__ico {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__0 {
+        height: 0;
+        overflow: hidden;
+    
+        margin: 0!important;
+    }
+
+    &__half {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: var(--toggle-rows-count);
+        overflow: hidden;
+    }
+}
